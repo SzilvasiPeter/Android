@@ -30,16 +30,16 @@ class CustomAdapter extends ArrayAdapter<String>{
         ImageView myImage = (ImageView) customView.findViewById(R.id.myImage);
         myText.setText(singleFoodItem);
 
-        if(singleFoodItem == "Bacon") {
-            myImage.setImageResource(R.drawable.bacon);
-        }else if(singleFoodItem == "Ham"){
-            myImage.setImageResource(R.drawable.ham);
-        }else if(singleFoodItem == "Tuna"){
-            myImage.setImageResource(R.drawable.tuna);
-        }else if(singleFoodItem == "Candy"){
-            myImage.setImageResource(R.drawable.candy);
-        }else if(singleFoodItem == "Potato"){
-            myImage.setImageResource(R.drawable.potato);
+        if(singleFoodItem == "Meat") {
+            myImage.setImageResource(R.drawable.meat);
+        }else if(singleFoodItem == "Onion"){
+            myImage.setImageResource(R.drawable.onion);
+        }else if(singleFoodItem == "Tomato"){
+            myImage.setImageResource(R.drawable.tomato);
+        }else if(singleFoodItem == "Sauce"){
+            myImage.setImageResource(R.drawable.sauce);
+        }else if(singleFoodItem == "Salad"){
+            myImage.setImageResource(R.drawable.salad);
         }
 
         return customView;

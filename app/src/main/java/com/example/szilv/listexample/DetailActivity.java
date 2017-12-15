@@ -44,4 +44,9 @@ public class DetailActivity extends AppCompatActivity {
         dbHandler.addFood(food);
         printDatabase();
     }
+
+    public void deleteButtonClick(View view) {
+        dbHandler.deleteFoods();
+        printDatabase();
+    }
 }

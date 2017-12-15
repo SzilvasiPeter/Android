@@ -34,6 +34,12 @@ public class MyDBHandler extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    //Delete all comment from the databse
+    public void deleteFoods(){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_FOODS);
+    }
+
     //Add a new row to the database
     public void addFood(Foods food){
         ContentValues values = new ContentValues();
